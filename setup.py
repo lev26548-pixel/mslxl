@@ -1,8 +1,8 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="mszx",
-    version="1.0.0",
+    name="mslxl",
+    version="1.0.1",
     author="mt.co",
     author_email="txz.file@gmail.com",
     description="7-битный архиватор текста",
