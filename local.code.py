@@ -1,7 +1,7 @@
 import os
 import sys
 import time
-import mszx
+import mslxl
 
 def get_download_path(filename):
     if os.name == 'nt':
@@ -25,12 +25,12 @@ while True:
     os.system('cls' if os.name == 'nt' else 'clear')
 
     print("=" * 45)
-    print("MSZX")
+    print("mslxl")
     print("=" * 10)
     print("Создано mt.co / szx.pythonanywhere.com")
     print("=" * 10)
     print("Доступные действия:")
-    print(" 1 — Запаковать текст в .mszx (в Загрузки)")
+    print(" 1 — Запаковать текст в .mslxl (в Загрузки)")
     print(" 2 — Распаковать и прочитать файл из Загрузок")
     print(" 3 — Выйти из программы")
     print("=" * 45)
@@ -45,8 +45,8 @@ while True:
             time.sleep(2)
             continue
 
-        if not filename.endswith(".mszx"):
-            filename += ".mszx"
+        if not filename.endswith(".mslxl"):
+            filename += ".mslxl"
 
         text_content = input("Введи или вставь текст, который нужно сжать: ")
         full_path = get_download_path(filename)
@@ -61,14 +61,14 @@ while True:
         input("Нажми Enter, чтобы вернуться в главное меню...")
 
     elif mode == "2":
-        filename = input("Введи имя файла из Загрузок (например, secret.mszx): ").strip()
+        filename = input("Введи имя файла из Загрузок (например, secret.mslxl): ").strip()
         if not filename:
             print("! Ты не ввёл имя файла!")
             time.sleep(2)
             continue
 
-        if not filename.endswith(".mszx"):
-            filename += ".mszx"
+        if not filename.endswith(".mslxl"):
+            filename += ".mslxl"
 
         full_path = get_download_path(filename)
 
@@ -81,12 +81,12 @@ while True:
                 print(decrypted_text)
                 print("="*45 + "")
             except Exception as e:
-                print(f"!!! Ошибка чтения структуры .mszx: {e}")
+                print(f"!!! Ошибка чтения структуры .mslxl: {e}")
 
         input("Нажми Enter, чтобы вернуться в главное меню...")
 
     elif mode == "3":
-        print(":) Спасибо за использование формата .mszx! До встречи.")
+        print(":) Спасибо за использование формата .mslxl! До встречи.")
         time.sleep(1.5)
         break
 
