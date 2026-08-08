@@ -5,3 +5,4 @@ mszx.pythonanywhere.com
 # creator:
 t.me/mrduck404
 # :)
+# thank you
