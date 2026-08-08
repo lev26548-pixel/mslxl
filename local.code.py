@@ -52,7 +52,7 @@ while True:
         full_path = get_download_path(filename)
 
         try:
-            mszx.compress(text_content, full_path)
+            mslxl.compress(text_content, full_path)
             print(f":) Всё готово! Текст успешно упакован.")
             print(f"? Файл лежит тут: {full_path}")
         except Exception as e:
@@ -76,7 +76,7 @@ while True:
             print(f"!! Файл не найден. Проверь, лежит ли он в Загрузках под именем {filename}")
         else:
             try:
-                decrypted_text = mszx.decompress(full_path)
+                decrypted_text = mslxl.decompress(full_path)
                 print("" + "="*12 + " РАСШИФРОВАННЫЙ ТЕКСТ " + "="*12)
                 print(decrypted_text)
                 print("="*45 + "")
