@@ -6,4 +6,4 @@ szx.pythonanywhere.com
 t.me/mrduck404
 # :)
 # thank you
-# dowload python: pip install mslxl, or "dowload.py" or "dowload-or_github.py"
+# dowload python: pip install mslxl, or "download.py" or "download-or_github.py"
